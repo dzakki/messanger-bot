@@ -1,0 +1,4 @@
+https://gist-bot-messanger.herokuapp.com/
+https://gist-bot-messanger.herokuapp.com/webhook?hub.verify_token=55555&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe
+
+curl -H "Content-Type: application/json" -X POST "https://gist-bot-messanger.herokuapp.com/webhook" -d '{"object": "page", "entry": [{"messaging": [{"message": "TEST_MESSAGE"}]}]}'
