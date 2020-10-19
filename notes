@@ -2,3 +2,56 @@ https://gist-bot-messanger.herokuapp.com/
 https://gist-bot-messanger.herokuapp.com/webhook?hub.verify_token=55555&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe
 
 curl -H "Content-Type: application/json" -X POST "https://gist-bot-messanger.herokuapp.com/webhook" -d '{"object": "page", "entry": [{"messaging": [{"message": "TEST_MESSAGE"}]}]}'
+
+
+=== play with get started button ===
+ https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "get_started": {
+      "payload":"GET_STARTED"
+  }
+}' "https://graph.facebook.com/v8.0/me/messenger_profile?access_token=<PAGE_ACCESS_TOKEN>"
+
+=== end play with get started button ===
+
+
+=== play with option menu in welcome page ===
+https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/ice-breakers#properties
+=== end with option menu in welcome page === 
+
+
+=== play with greeting ===
+https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/greeting#properties
+=== end play with greeting
+
+=== play with menu presistent ===
+https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/persistent-menu
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "persistent_menu": [
+        {
+            "locale": "default",
+            "composer_input_disabled": false,
+            "call_to_actions": [
+                {
+                    "type": "postback",
+                    "title": "Talk to an agent",
+                    "payload": "CARE_HELP"
+                },
+                {
+                    "type": "postback",
+                    "title": "Outfit suggestions",
+                    "payload": "CURATION"
+                },
+                {
+                    "type": "web_url",
+                    "title": "Shop now",
+                    "url": "https://www.originalcoastclothing.com/",
+                    "webview_height_ratio": "full"
+                }
+            ]
+        }
+    ]
+}' "https://graph.facebook.com/v8.0/me/messenger_profile?access_token=<PAGE_ACCESS_TOKEN>"
+=== end with menu presistent ===
