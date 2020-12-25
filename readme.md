@@ -228,7 +228,7 @@ PAGE_ACCESS_TOKEN=<ACCESS_TOKEN>
 ketika user mengirim pesan salam pembuka pada messanger page kita, seperti: Hello, Hi. maka messanger akan membalas pesan tersebut seperti: ` Hi <name>! selamat datang di Gist Bot, dimana kamu bisa menyimpan poin poin penting yang kamu punya di memori aku.`
 
 <p align="center">
-  <img src="https://github.com/dzakki/gist_bot/blob/development/main/assets/images/salam-pembuka.png" alt="salam-pembuka" />
+  <img src="https://raw.githubusercontent.com/dzakki/gist_bot/development/main/assets/images/salam-pembuka.png" alt="salam-pembuka" />
 </p>
 
 #### Membuat fungsi untuk menangani pesan yang masuk
@@ -395,7 +395,7 @@ setelah kita melakukan langkah langkah tersebut, alangkah baik nya kita melakuka
 ketika melakukan uji coba harusnya mengeluarkan hasil seperti gambar dibawah ini:
 
 <p align="center">
-  <img src="https://github.com/dzakki/gist_bot/blob/development/main/assets/images/uji-coba-1.png" alt="uji-coba-1" />
+  <img src="https://raw.githubusercontent.com/dzakki/gist_bot/development/main/assets/images/uji-coba-1.png" alt="uji-coba-1" />
 </p>
 
 jika hasil tidak sesuai seperti yang digambar, maka kita coba ulangi kembali langkah-langkah dari [Membuat fungsi untuk menangani pesan yang masuk](#) dst, sampai berhasil. 
